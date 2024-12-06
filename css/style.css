@@ -146,10 +146,6 @@ nav .container .logo{
   transition: 0.4s;
 }
 
-nav .container .logo a{
-
-}
-
 nav .container .catojiry a{
   margin-right: 40px;
   transition: 0.4s;
@@ -301,7 +297,7 @@ nav .container .icons button{
   width: 100%;
   display: flex;
   justify-content: center;
-  background: url('/images/icons/pattern1.png');
+  background: url('images/icons/pattern1.png');
   background-repeat: repeat;
 }
 
@@ -464,7 +460,7 @@ h4{
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url('/images/icons/pattern2.png');
+  background-image: url('images/icons/pattern2.png');
   background-repeat: repeat;
   padding: 100px 0;
 }
@@ -808,7 +804,7 @@ h4{
 
 .sign-up{
   width: 100%;
-  background: url("/images/icons/pattern1.png") repeat;
+  background: url("images/icons/pattern1.png") repeat;
   display: flex;
   justify-content: center;
 }
