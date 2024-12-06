@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pato Master</title>
+    <title>Home</title>
     <link rel="icon" type="image/png" href="images/icons/favicon.png">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
@@ -17,7 +17,6 @@
             <a href="#">
               <img
                 src="images/icons/logo.png"
-                data-logofixed="images/icons/logo2.png"
               />
             </a>
           </div>
@@ -665,10 +664,22 @@
 
 
     <script type="text/javascript">
-      window.addEventListener("scroll", function () {
-        var nav = document.querySelector("nav");
-        nav.classList.toggle("sticky", window.scrollY > 5);
-      });
+      window.addEventListener("scroll", () => {
+      const navbar = document.querySelector("nav");
+      const logo = document.querySelector(".logo img"); // Select the logo image
+      const originalLogo = "images/icons/logo.png";     // Original logo path
+      const scrolledLogo = "images/icons/logo2.png";    // Alternate logo path
+
+      if (window.scrollY > 10) {
+        navbar.classList.add("sticky"); // Add a class to change navbar style
+        logo.src = scrolledLogo;          // Change the logo to the alternate one
+      } else {
+        navbar.classList.remove("sticky"); // Remove the class
+        logo.src = originalLogo;             // Revert to the original logo
+      }
+    });
+
+
 
     </script>
   </body>
